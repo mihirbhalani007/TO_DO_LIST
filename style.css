@@ -1,0 +1,180 @@
+/* Basic Style */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+  color: #333;
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  display: block;
+  width: 30vw;
+  min-width: 450px;
+  margin: 100px auto 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+
+li,
+h3 {
+  clear: both;
+  list-style: none;
+}
+h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 5px 0px 5px;
+  font-family: "Raleway", "sans-serif";
+  cursor: pointer;
+}
+button:hover {
+  color: #333;
+}
+/* Heading */
+h3,
+label[for="new-task"] {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 15px;
+  line-height: 18px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #f0e9e9;
+  background: #ffffff;
+  font-family: "Raleway", "sans-serif";
+  color: #888;
+  border-radius: 5px;
+}
+#new-task {
+  margin-left: 22px;
+}
+
+input[type="text"]:hover {
+  background-color: #f7f4f4;
+  border: 1px solid rgb(233, 229, 229);
+}
+
+input[type="text"]:focus {
+  color: #333;
+}
+
+/* New Task */
+label[for="new-task"] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-task {
+  float: left;
+  width: 348px;
+}
+p > button:hover {
+  color: #0fc57c;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li > label {
+  font-size: 15px;
+  line-height: 40px;
+  height: 40;
+  width: 231px;
+  padding: 0 0 0 10px;
+}
+li > input[type="text"] {
+  width: 245px;
+}
+
+li > .delete:hover {
+  color: #cf2323;
+}
+li:hover {
+  background-color: #dbd5d5;
+  transition: background-color 0.4s ease-in-out;
+  border-radius: 7px;
+}
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+  padding: 0 0 0 10px;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+.edit:hover {
+  color: blue;
+}
+
+button {
+  background-color: white;
+  width: 65px;
+  height: 25px;
+  border-radius: 5px;
+  float: right;
+}
+
+button:hover {
+  box-shadow: 1px 1px 5px #b9b6b6;
+  /* box-shadow: 1px 1px 5px #0fc57c; */
+  transform: scale(1.05);
+}
+.edit:hover {
+  box-shadow: 1px 1px 5px #b9b6b6;
+  transform: scale(1.05);
+}
+.delete:hover {
+  box-shadow: 1px 1px 5px #b9b6b6;
+  transform: scale(1.05);
+}
+
+input#new-task:hover {
+  box-shadow: 1px 1px 5px #b9b6b6;
+}
+.delete {
+  width: 80px; ;
+}
